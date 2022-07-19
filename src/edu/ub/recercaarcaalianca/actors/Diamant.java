@@ -49,7 +49,7 @@ public class Diamant extends AbstractActor {
         Actor actor = colisio.getActor();
         if (actor instanceof Arqueologa) {
             Arqueologa arqueologa = (Arqueologa) actor;
-            // AQUI EL TEU CODI
+
         }
     }
 

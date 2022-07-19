@@ -128,12 +128,9 @@ public class Soldat extends AbstractActor {
 
     public void tractarColisio(Colisio colisio) {
         Actor actor = colisio.getActor();
-        // TODO alumnes, gestio de la colisio amb l'arqueologa amb el Soldat 
         if (actor instanceof Arqueologa) {
           Arqueologa arqueologa = (Arqueologa) actor;  
-          //ja pots utilitzar arqueologa per accedir als seus mètodes        
-            
-            
+
         }
     }
 
