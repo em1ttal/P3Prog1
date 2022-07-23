@@ -15,14 +15,13 @@ public class ExempleMain {
 
     private ExempleMain() {
 
-        temple = new Temple(3, 3);
+        temple = new Temple(2, 3);
         temple.addCambra(0, 0, crearCambra0Nivell0());
         temple.addCambra(0, 1, crearCambra1Nivell0());
         temple.addCambra(0, 2, crearCambra2Nivell0());
         temple.addCambra(1, 0, crearCambra0Nivell1());
         temple.addCambra(1, 1, crearCambra1Nivell1());
         temple.addCambra(1, 2, crearCambra2Nivell1());
-        temple.addCambra(2, 0, crearCambra0Nivell2());
 
         cindy_jones = new Arqueologa();
         Cambra cam = temple.getCambra(0, 0);
@@ -127,16 +126,7 @@ public class ExempleMain {
         porta.setNumCambraDesti(0);
         porta.setPosicioCambraDesti(h.getPosicioCela(2, 14));
 
-        porta = h.getPorta(3, 16);
-        porta.setNumNivellDesti(2);
-        porta.setNumCambraDesti(0);
-
-
         return h;
-    }
-
-    private  Cambra crearCambra0Nivell2() {
-
     }
 
     private Cambra getRandCambra() {
