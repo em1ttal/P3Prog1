@@ -30,7 +30,7 @@ public class ExempleMain {
 
         
         distribuirSoldats();
-        
+        distribuirDiamants();
 
         //initialitzacio del joc
         joc = new Joc(temple, cindy_jones);
@@ -155,9 +155,24 @@ public class ExempleMain {
                 cam.addActor(s);
             }
         }
-
     }
-  
+    private void distribuirDiamants() {
+        int [] num = {2, 3, 3, 3, 2};
+
+        for(int i = 0; i < COLORS_DIAMANTS.values().length; i++) {
+            for(int j = 0; j < num[i]; j++) {
+                int nivell = (int) (Math.random() * temple.getNumNivells());
+                int numCambra = (int) (Math.random() * temple.getNumCambres(nivell));
+                Cambra cam = temple.getCambra(nivell, numCambra);
+                int[] cela = obtenirCelaLliure(cam);
+                Diamant d = new Diamant(Constants.COLORS_DIAMANTS.values()[i]);
+
+                int[] posicio = cam.getPosicioCela(cela[0], cela[1]);
+                d.setPosicioInicial(posicio[0], posicio[1]);
+                cam.addActor(d);
+            }
+        }
+    }
 
     private int[] obtenirCelaLliure(Cambra cambra) {
         int fila = 0;

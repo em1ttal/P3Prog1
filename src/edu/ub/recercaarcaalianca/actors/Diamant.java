@@ -12,20 +12,20 @@ public class Diamant extends AbstractActor {
 
     public Diamant(Constants.COLORS_DIAMANTS color) {
         switch (color) {
-            case VERMELL:
+            case VERMELL: //red
                 image = Util.carregarImatge("Diamond.png", new Color(255, 0, 0, 0));
                 break;
-            case VERD:
-                image = Util.carregarImatge("Diamong.png", new Color(0, 255, 0, 0));
+            case VERD: //green
+                image = Util.carregarImatge("Diamond.png", new Color(0, 255, 0, 0));
                 break;
-            case BLAU:
-                image = Util.carregarImatge("Diamong.png", new Color(0, 0, 255, 0));
+            case BLAU: //blue
+                image = Util.carregarImatge("Diamond.png", new Color(0, 0, 255, 0));
                 break;
-            case GROC:
-                image = Util.carregarImatge("Diamong.png", new Color(25, 255, 0, 0));
+            case GROC: //yellow
+                image = Util.carregarImatge("Diamond.png", new Color(255, 255, 0, 0));
                 break;
-            case TARONJA:
-                image = Util.carregarImatge("Diamong.png", new Color(255, 128, 64, 0));
+            case TARONJA: //orange
+                image = Util.carregarImatge("Diamond.png", new Color(255, 128, 64, 0));
                 break;
         }
     }
